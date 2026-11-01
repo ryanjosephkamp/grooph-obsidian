@@ -1,0 +1,49 @@
+/*
+ * A grooph drawing in a note. The picture takes its colors from CSS variables (--gp-*), and these give it Obsidian's
+ * own, so it follows the app's light and dark and the theme in use. The kinds of step keep colors of their own,
+ * from Obsidian's palette. A drawing in one of grooph's named themes (data-look) keeps that theme's colors.
+ */
+.grooph-block .grooph-picture {
+  max-width: 100%;
+  height: auto;
+}
+
+.grooph-block .grooph-picture:not([data-look]) {
+  --gp-bg: var(--background-primary);
+  --gp-surface: var(--background-secondary);
+  --gp-surface-2: var(--background-modifier-hover);
+  --gp-ink: var(--text-normal);
+  --gp-ink-2: var(--text-muted);
+  --gp-ink-3: var(--text-faint);
+  --gp-line: var(--background-modifier-border);
+  --gp-line-strong: var(--background-modifier-border-hover);
+  --gp-accent: var(--interactive-accent);
+  --gp-accent-soft: var(--background-modifier-active-hover);
+  --gp-gate: var(--color-orange);
+  --gp-gate-soft: rgba(var(--color-orange-rgb), 0.15);
+  --gp-check: var(--color-blue);
+  --gp-merge: var(--color-purple);
+  --gp-stop: var(--text-muted);
+  --gp-ok: var(--color-green);
+  --gp-ok-soft: rgba(var(--color-green-rgb), 0.15);
+  --gp-warning: var(--color-yellow);
+  --gp-error: var(--color-red);
+  --gp-error-soft: rgba(var(--color-red-rgb), 0.15);
+  --gp-loop-0: var(--color-purple);
+  --gp-loop-1: var(--color-cyan);
+  --gp-loop-2: var(--color-orange);
+  --gp-loop-3: var(--color-pink);
+}
+
+.grooph-block .grooph-error {
+  color: var(--text-error);
+  font-family: var(--font-monospace);
+  font-size: var(--font-smaller);
+  white-space: pre-wrap;
+}
+
+.grooph-block .grooph-open {
+  display: inline-block;
+  margin-top: var(--size-4-1);
+  font-size: var(--font-smaller);
+}
