@@ -1,7 +1,7 @@
 {
   "id": "grooph",
   "name": "grooph",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "minAppVersion": "1.0.0",
   "description": "Draw workflow diagrams from grooph code blocks: graphs and operation maps, flat or as 3D stills, in your theme.",
   "author": "Ryan Joseph Kamp",
