@@ -1,6 +1,6 @@
 {
   "name": "grooph-obsidian",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "private": true,
   "description": "An Obsidian plugin that draws grooph code blocks as workflow diagrams.",
   "license": "MIT",

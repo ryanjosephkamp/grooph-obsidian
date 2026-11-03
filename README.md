@@ -24,6 +24,31 @@ Draw workflow diagrams in your notes. A `grooph` code block that holds a grooph 
 ```
 ````
 
+## Install
+
+From Obsidian:
+
+1. Open **Settings**, then **Community plugins**, and turn off Restricted mode if it is on.
+2. Select **Browse**, search for **grooph**, and select **Install**, then **Enable**.
+
+By hand:
+
+1. Download `main.js`, `manifest.json`, and `styles.css` from the [latest release](https://github.com/ryanjosephkamp/grooph-obsidian/releases/latest).
+2. Copy them into `<vault>/.obsidian/plugins/grooph/`. The folder name is the `id` in `manifest.json`, `grooph`; create it if it is missing.
+3. In Obsidian, reload the plugins list (or restart the app), then enable **grooph** under **Settings**, **Community plugins**.
+
+The plugin works on desktop and on mobile.
+
+## Use
+
+Write a fenced code block whose language is `grooph`, and put a grooph document in it, as in the example above. The block is drawn in place of its text, in Reading view and in Live Preview. Open the note in Source mode to see and edit the text.
+
+The plugin adds no commands and has no settings. Everything is set in the block itself, with the options below. The drawing:
+
+- follows your Obsidian theme's colors, in light and in dark, unless the block names a `theme`;
+- changes between the phone and wide layouts as the pane is resized, unless the block names a `layout`;
+- shows a message in place of the drawing when the block cannot be drawn.
+
 ## Options
 
 Lines before the document set how it is drawn:
